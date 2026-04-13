@@ -55,6 +55,7 @@ function atm() {
                 account.accountError("Invalid deposit amount");
             } else {
                 account.deposit(depositAmount);
+                account.getBalance();
             }
             break;
 
@@ -64,6 +65,7 @@ function atm() {
                 account.accountError("Invalid withdraw amount");
             } else {
                 account.withdrawal(withdrawAmount);
+                account.getBalance();
             }
             break;    
 
